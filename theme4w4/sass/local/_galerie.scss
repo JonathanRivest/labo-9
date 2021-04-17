@@ -3,5 +3,13 @@
     flex-wrap: wrap;
     article {
         margin: 2%;
+        text-align: center;
+        .galerie_info {
+            display: flex;
+            flex-direction: column;
+            p {
+                margin: 0;
+            }
+        }
     }
 }

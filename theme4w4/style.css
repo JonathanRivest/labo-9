@@ -1436,5 +1436,15 @@ La barre du millieu
 
 .galerie article {
   margin: 2%;
+  text-align: center;
+}
+
+.galerie article .galerie_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.galerie article .galerie_info p {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -12,6 +12,7 @@ global $tPropriété;
 <article>
 <a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail( 'thumbnail'); ?></a>
 <div class="galerie_info">
-<?php the_title(); ?>
+<p><?php the_title(); ?></p>
+<p><?php the_author(); ?></p>
 </div>
 </article> 
