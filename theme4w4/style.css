@@ -1429,87 +1429,12 @@ La barre du millieu
 
 /* local burger
 --------------------------------------------- */
-.carrousel-2 {
-  width: 300vw;
-  height: 30vh;
+.galerie {
   display: flex;
-  transition: transform .5s;
-  transform: translate(0);
-  flex-wrap: nowrap !important;
+  flex-wrap: wrap;
 }
 
-.carrousel-2 .slide__conteneur {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50vw;
-}
-
-.carrousel-2 .slide__conteneur .slide {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media (min-width: 800px) {
-  .carrousel-2 .slide__conteneur .slide {
-    width: 60%;
-  }
-}
-
-.carrousel-2 .slide__conteneur .slide img {
-  display: block;
+.galerie article {
   margin: 2%;
-}
-
-.carrousel-2 .slide__conteneur .slide .slide__info {
-  display: flex;
-  flex-direction: column;
-}
-
-.carrousel-2 .slide__conteneur .slide .slide__info p {
-  font-size: .8rem;
-}
-
-.carrousel-2 .slide__conteneur .slide .slide__info a {
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-
-.carrousel-2 .slide__conteneur .slide:nth-of-type(1) {
-  background-color: #00ff37;
-}
-
-.carrousel-2 .slide__conteneur .slide:nth-of-type(2) {
-  background-color: #ff9d00;
-}
-
-.carrousel-2 .slide__conteneur .slide:nth-of-type(3) {
-  background-color: #00aeff;
-}
-
-.ctrl-carrousel {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-}
-
-.ctrl-carrousel .rad-carrousel {
-  display: block;
-  margin: .5rem .8rem .5rem .8rem;
-}
-
-.ctrl-carrousel .rad-carrousel:nth-of-type(4) {
-  display: none;
-}
-
-.ctrl-carrousel .rad-carrousel:nth-of-type(5) {
-  display: none;
-}
-
-.ctrl-carrousel .rad-carrousel:nth-of-type(6) {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */
