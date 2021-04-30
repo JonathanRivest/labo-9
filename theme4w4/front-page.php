@@ -49,7 +49,7 @@ get_header();
 				<?php if (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique']) ) : 
 						get_template_part( 'template-parts/content', 'cours-carrousel' ); 
 						$chaine_bouton_radio .= '<input class="rad-carrousel"  type="radio" name="rad-'.$tPropriété['typeCours'].'">';
-						elseif ($tPropriété['typeCours'] == 'Projet'):
+						elseif ($tPropriété['typeCours'] == 'Projet' || $tPropriété['typeCours'] == 'Mon projet' ):
 							get_template_part( 'template-parts/content', 'galerie' ); 
 
 				else :		
@@ -100,7 +100,7 @@ function class_composant($type_de_cours) {
     if(in_array($type_de_cours, ['Web', 'Jeu', 'Spécifique'])) {
         return('class="carrousel-2"');
 	}
-	elseif($type_de_cours == 'Projet') {
+	elseif($type_de_cours == 'Projet' || $type_de_cours == 'Mon projet') {
          return('class="galerie"');
 	}
 	else {
