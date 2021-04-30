@@ -43,7 +43,7 @@ get_header();
 						<?php endif; ?>
 					<?php endif; ?>	
 					<h2><?php echo $tPropriété['typeCours'] ?></h2>
-					<section  <?php echo (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique']) ? 'class="carrousel-2"':'class="bloc"'); ?>>
+					<section  <?php echo class_composant($tPropriété['typeCours']) ?>>
 				<?php endif ?>	
 
 				<?php if (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique']) ) : 
@@ -94,4 +94,16 @@ function convertirTableau(&$tPropriété)
 	$tPropriété['titrePartiel'] = substr($tPropriété['titre'],8,-6);
 	$tPropriété['session'] = substr($tPropriété['titre'], 4,1);
 	$tPropriété['typeCours'] = get_field('type_de_cours');
+}
+
+function class_composant($type_de_cours) {
+    if(in_array($type_de_cours, ['Web', 'Jeu', 'Spécifique'])) {
+        return('class="carrousel-2"');
+	}
+	elseif($type_de_cours == 'Projet') {
+         return('class="galerie"');
+	}
+	else {
+		return('class="bloc"');
+	}
 }
