@@ -681,6 +681,7 @@ textarea {
 
 .widget-area {
   grid-area: sidebar;
+  margin-top: 25px;
 }
 
 .site-footer {
@@ -1466,6 +1467,10 @@ La barre du millieu
     padding-right: 25%;
     padding-left: 25%;
   }
+}
+
+.entry-header .entry-title {
+  margin-top: 55px;
 }
 
 /* local burger
